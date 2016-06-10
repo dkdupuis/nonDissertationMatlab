@@ -1,0 +1,20 @@
+function generateParameterFiles()
+
+dataBaseLoc='K:\PATHS to Success\Manuscripts in Progress\ERN development\data\T1\W1\Control\';
+f=dir(dataBaseLoc);
+preNum=size(f);
+numFolders=preNum(1);
+
+for i=3:1:numFolders
+    
+    fileLoc=strcat(dataBaseLoc,f(i).name);
+    newF=dir(fileLoc);
+    newFpreSize=size(newF);
+    newFSize=newFpreSize(1);
+
+    for r=3:1:newFSize
+
+        if(strfind(newF(r).name,'numTrials')>0)
+            
+
+end
